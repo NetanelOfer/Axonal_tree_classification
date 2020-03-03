@@ -1,0 +1,10 @@
+begintemplate morphology_3daa582d70
+public morphology
+proc morphology(){localobj nl,import
+	nl = new Import3d_SWC_read()
+	nl.quiet = 1
+	nl.input("/home/netanel/BBP/NeuroMorpho-IP/Pyramidal/Pyramidal/luebke/mouse/Tbr2lineage_March25IR3d.CNG.swc")
+	import = new Import3d_GUI(nl, 0)
+	import.instantiate($o1)
+	}
+endtemplate morphology_3daa582d70
